@@ -3,7 +3,7 @@
 :root {
     --cor-de-fundo: #0a858a;
     --verde: #79450a25;
-    --branco: #FFFFFF;
+    --branco: #19ec60;
     --botao-ativo: #d8109c;
     --botao-inativo: rgba(6, 20, 58, 0.5);
     --texto-fundo: rgba(180, 29, 143, 0.3);
@@ -87,13 +87,33 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
-    color: var(--verde);
+    color: var(#d8109c);
     text-transform: uppercase;
 }
 
 .contador {
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito {
+    padding: 0 16px;
     text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero {
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto {
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
 }
 
 @media screen and (min-width: 768px) {
